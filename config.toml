@@ -1,0 +1,38 @@
+baseURL = "/"
+title = "Workshop K8s"
+theme = "hugo-theme-learn"
+themesdir = "./themes"
+metaDataFormat = "yaml"
+defaultContentLanguageInSubdir= false
+languageCode = "pt"
+defaultContentLanguage = "pt"
+
+[params]
+  #editURL = "https://github.com/matcornic/hugo-theme-learn/edit/master/exampleSite/content/"
+  description = "Workshop K8s"
+  author = "Jar. Mendia"
+  showVisitedLinks = true
+  disableBreadcrumb = false
+  disableNextPrev = false
+  themeVariant = "blue"
+
+[outputs]
+home = [ "HTML", "RSS", "JSON"]
+
+[[menu.shortcuts]]
+name = "<i class='fab fa-fw fa-youtube'></i> Youtube"
+identifier = "yt"
+url = "https://youtube.com"
+weight = 10
+
+[[menu.shortcuts]]
+name = "<i class='fab fa-fw fa-instagram'></i> Instagram"
+identifier = "ig"
+url = "https://www.instagram.com/"
+weight = 10
+
+[[menu.shortcuts]]
+name = "<i class='fab fa-fw fa-facebook'></i> Facebook"
+identifier = "wp"
+url = "http://facebook.com"
+weight = 10

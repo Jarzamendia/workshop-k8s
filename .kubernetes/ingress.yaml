@@ -1,0 +1,15 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: workshop
+  namespace: workshop
+  annotations:
+    kubernetes.io/ingress.class: traefik
+spec:
+  rules:
+  - host: workshop.9be70cc3-16b8-480a-b05f-fb85b28af866.k8s.civo.com
+    http:
+      paths:
+      - backend:
+          serviceName: workshop
+          servicePort: 80

@@ -1,0 +1,14 @@
+# Service
+apiVersion: v1
+kind: Service
+metadata:
+  name: workshop
+  namespace: workshop
+  labels:
+    app: workshop
+spec:
+  ports:
+  - port: 80
+    targetPort: 80
+  selector:
+    app: workshop
